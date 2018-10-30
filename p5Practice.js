@@ -17,7 +17,7 @@ var c = 255
 
 function setup() {
   //canvas tag has to be always on the top
-  canvas = createCanvas(windowWidth,windowHeight)
+  canvas = createCanvas(windowWidth,1100)
   canvas.position(0,0)
   
   //then set background color transpalent

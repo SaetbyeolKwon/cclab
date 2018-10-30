@@ -9,7 +9,7 @@ $(document).ready(function () {
 for(let i=0; i<texts.length; ++i){
     $(document).click(function(){
         console.log(i);
-        $("h1").html(texts[i]).css("width","70%")
+        $("h1").html("Let it be forgotten, as a flower is forgotten, Forgotten as a fire that once was singing gold,").css("width","70%")
         $("h3").css("display","none")
     })
 }
