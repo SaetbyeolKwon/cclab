@@ -17,13 +17,14 @@ var c = 255
 
 function setup() {
   //canvas tag has to be always on the top
-  canvas = createCanvas(windowWidth,1100)
+  canvas = createCanvas(windowWidth,windowHeight)
   canvas.position(0,0)
   
   //then set background color transpalent
   background(0,0)
   
   frameRate(30)
+  noCursor();
   
 }
 

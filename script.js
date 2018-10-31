@@ -1,17 +1,31 @@
 var clicked = false
 const texts = ["Let it be forgotten as a flower is forgotten,"
-,"2","3","4","5","6","7"]
+,"Forgotten as a fire that once was singing gold,"
+,"Let it be forgotten for ever and ever,"
+,"Time is a kind friend, he will make us old."
+,"If anyone asks, say it was forgotten"
+,"Long and long ago,"
+,"As a flower, as a fire, as a hushed footfall"
+,"In a long forgotten snow.",
+" "
+]
 
 $(document).ready(function () {
 	console.log('Hello World')
 })
 
-for(let i=0; i<texts.length; ++i){
-    $(document).click(function(){
-        console.log(i);
-        $("h1").html("Let it be forgotten, as a flower is forgotten, Forgotten as a fire that once was singing gold,").css("width","70%")
-        $("h3").css("display","none")
-    })
+let index = 0
+
+$(document).click(function(){
+    console.log(index)
+    $("h1").html(texts[index]).css("width","70%")
+    $("h3").css("display","none")
+    index++
+})
+
+if(index > 9){
+    index = 0
+    console.log("go back")
 }
 
   $(document).click(function(){
