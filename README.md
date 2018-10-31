@@ -1,2 +1,2 @@
 # cclab
-web
+https://saetbyeolkwon.github.io/cclab/
